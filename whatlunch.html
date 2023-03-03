@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+<div></div>
+  </div>
+
+
+  <script>
+
+const root =document.getElementById("root");
+const lunch=document.createElement("div");
+// const lunch=["짬뽕","짜장","순대국밥","콩나물국밥","굴국밥","샐러드","연탄불고기","가지구이","마라탕","바로그집떡볶이","어묵탕","해물찜"]
+
+// lunch.style.width="100px";
+// lunch.style.height="100px";
+// lunch.style.border="5px solid red";
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min; //최댓값은 제외, 최솟값은 포함
+}
+
+console.log(lunch[getRandomInt(0,lunch.length)]);
+
+root.style.height="1000px";
+root.style.width="1000px";
+root.style.border="5px solid black";
+
+lunch.style.width="500px";
+lunch.style.height="500px";
+lunch.style.border="5px solid black";
+
+
+
+
+root.appendChild(lunch);
+
+
+  </script>
+</body>
+</html>
